@@ -29,3 +29,7 @@
         (UI) Request to Server and the data will be sent back to UI
         And this is only One Direction
         After an interval, it will again request the server
+
+# useMemo() => used for caching a value between re-renders
+# useCallback() => used for caching a function between re-renders
+# useRef() => Reference a value that's not needed for rendering
