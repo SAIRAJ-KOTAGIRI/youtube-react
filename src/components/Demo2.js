@@ -8,6 +8,7 @@ const Demo2 = () => {
 
   const i = useRef(null)
   useEffect(() => {
+    if(i.current) return;
     i.current = setInterval(() => console.log("React" + Math.random()), 1000);
     return () => clearInterval(i.current);
   }, [])
